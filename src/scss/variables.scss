@@ -1,0 +1,76 @@
+$basic-font-color: #cacaca;
+$basic-bg-color: #08020d;
+$basic-black-font-color: #3c3b3d;
+$gray: #e0e0e0;
+$dark-grey: #3c3b3d;
+$green: #34c176;
+$orange: #f89202;
+$purple: #532ba1;
+$chocolate: #95390c;
+
+@mixin general-font($weight) {
+  color: $basic-black-font-color;
+  font-weight: $weight;
+  font-family: Roboto, sans-serif;
+}
+
+@mixin header1 {
+  font-size: 60px;
+  line-height: 90px;
+  text-transform: uppercase;
+
+  @include general-font(700);
+}
+
+@mixin header2 {
+  font-size: 38px;
+  line-height: 57px;
+  text-transform: uppercase;
+
+  @include general-font(700); }
+
+@mixin header3 {
+  font-size: 24px;
+  line-height: 45px;
+  text-transform: uppercase;
+
+  @include general-font(400);
+}
+
+@mixin header3-capitalize {
+  font-size: 24px;
+  line-height: 45px;
+
+  @include general-font(400);
+}
+
+@mixin header3-bold {
+  font-size: 24px;
+  line-height: 45px;
+
+  @include general-font(700);
+}
+
+@mixin header4 {
+  font-size: 18px;
+  line-height: 27px;
+  text-transform: uppercase;
+
+  @include general-font(700);
+}
+
+@mixin text($font-size) {
+  color: $basic-black-font-color;
+  font-weight: 400;
+  font-size: $font-size;
+  font-family: Roboto, sans-serif;
+  line-height: $font-size * 1.5;
+}
+
+@mixin text-popular-track {
+  font-size: 12.8px;
+  line-height: 19px;
+  text-transform: uppercase;
+
+  @include general-font(700);
+}
