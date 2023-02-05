@@ -18,5 +18,9 @@
     "surge": "^0.23.1"
   },
   "author": "Nikita Mikhaylov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.58.0"
+  }
 }

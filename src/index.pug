@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title MusicBox by TessaVesper
+    link(rel='stylesheet' href='../css/style.css')
+body
+  header
+    .header-nav
+      .logo
+        img.logo-img(src="../images/logo.svg", alt="Logo")
+        p.white-text Music Box
+      ul.nav
+        li.white-text 
+          a(href="#") Главная
+        li
+          a(href="#") Каталог
+        li
+          a(href="#") Исполнители
+        li 
+          a(href="#") Контакты
+    form.search(action='#')
+      input(type='text', name='search', placeholder='Поиск...')
+  main
+    section.page-description#page-description
+      .wrapper
+        h1 Онлайн музыка где угодно
+        h2 без ограничений
+        .header-form
+          form(action='#')
+            label(for='form-label') Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки
+            input#form-label(type='text', placeholder='Имя')
+            input#form-label(type='email', placeholder='Email')
+          button.form-button Получить доступ

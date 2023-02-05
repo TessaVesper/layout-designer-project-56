@@ -1,4 +1,83 @@
-.registration {
-  display: flex;
-  justify-content: center;
+.wrapper {
+  padding: 200px 120px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
+
+.page-description {
+  background-image: url(../images/banner.png);
+  background-image: center;
+  background-size: cover;
+}
+
+header {
+  max-width: 1200px;
+  padding-left: 120px;
+  padding-right: 120px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+}
+
+.header-nav {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    text-transform: uppercase;
+
+    .logo-img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  .nav {
+    display: flex;
+    gap: 2.4rem;
+  
+    li {
+      list-style: none;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        color: $basic-color;
+
+        &:hover, &:active {
+          color: $white;
+        }
+      }
+    }
+
+  }
+}
+
+.search input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: hidden;
+  width: 24.8rem;
+  background-color: $grey;
+  border-radius: 5rem;
+  padding: .5rem 1rem .5rem 1rem;
+  color: $grey-search;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 13.3px;
+}
+
+
+

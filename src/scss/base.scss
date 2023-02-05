@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    font-weight: 500;
+    src: url(../fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    font-weight: 400;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+$basic-color: #cacaca;
+$bg: #08020d;
+$white: #fff;
+$grey: #3C3B3D;
+$grey-search: #757575;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+    color: $basic-color;
+    background-color: $bg;
+}
+
+.white-text {
+    color: $white;
+}
+
+@mixin heading($font, $line) {
+    font-size: $font;
+    line-height: $line;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1199px) {
+    h1 {
+        @include heading(60px, 90px);
+    }
+    
+    h2 {
+        @include heading(38px, 57px)
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        @include heading(30px, 45px)
+    }
+
+    h2 {
+        @include heading(18px, 27px)
+    }
+}
+

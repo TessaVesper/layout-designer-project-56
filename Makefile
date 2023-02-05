@@ -8,3 +8,9 @@ lint:
 
 deploy:
 	npx surge ./src/
+
+sass:
+	npx sass --watch ./src/scss/main.scss ./src/css/style.css
+
+pug:
+	npx pug ./src/index.pug --pretty -w -o ./src/build/
